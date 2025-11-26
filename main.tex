@@ -1,8 +1,11 @@
 \documentclass[]{article}
 \usepackage[affil-it]{authblk}
+\usepackage[backend=biber,style=alphabetic,maxbibnames=9,hyperref=true,abbreviate=false,backref=true]{biblatex}
+\usepackage{hyperref}
+\addbibresource{biblio.bib}
 
 %opening
-\title{Overdetermined Bilinear polynomial systems}
+\title{Overdetermined Bilinear Polynomial Systems}
 
 \author{Paul Mekhail}
 \affil{Laboratoire MIS, Université de Picardie Jules Verne, Amiens, France \\ \textrm{paul.mekhail@u-picardie.fr}}
@@ -13,10 +16,10 @@
 	\maketitle
 	
 	\section{Abstract}
-		Solving multivariate polynomial systems is a well-established problem with numerous applications, including robotics, biology, and cryptology. A common approach relies on computing Gröbner bases using state-of-the-art algorithms such as F4 or F5. For generic systems—those that are regular or semi-regular—the F5 algorithm performs no reductions to zero during the computation. Although this genericity assumption is widespread, it does not always hold in practice. Bilinear systems, for example, are inherently non-generic: they are neither regular nor semi-regular, and thus require additional care to analyze and to compute their Gröbner bases while avoiding reductions to zero.
-		In an article published in 2011, Faugère, Safey El Din, and Spaenlehauer investigated such systems, providing a complexity analysis for Gröbner basis computation with F5 and introducing a criterion that removes all reductions to zero. In this work, we extend their analysis to the overdetermined setting. This case is particularly relevant in cryptanalysis, where the results of Faugère et al. are sometimes applied beyond their intended scope. Our generalization formalizes Gröbner basis computations for overdetermined bilinear systems and clarifies their algorithmic behavior. Collaboration with Sorina Ionica.
+		Solving multivariate polynomial systems over finite fields is a well-established problem with numerous applications in cryptology. A common approach relies on computing Gröbner bases using state-of-the-art algorithms such as F4 or F5. For generic systems—those that are regular or semi-regular—the F5 algorithm performs no reductions to zero during the computation. Although this genericity assumption is widespread, it does not always hold in practice. Bilinear systems, for example, are neither regular nor semi-regular, and thus require additional care to analyze and to compute their Gröbner bases while avoiding reductions to zero.
+		In a 2011 article, Faugère, Safey El Din, and Spaenlehauer examined underdetermined bilinear systems, introducing a criterion that eliminates all reductions to zero, establishing their genericity in the Zariski topology, and providing a complexity analysis for computing their Gröbner bases. In this work, we extend their analysis to the overdetermined setting. This case is particularly relevant in cryptanalysis, where the results of Faugère et al. are sometimes applied beyond their intended scope. Our generalization formalizes Gröbner basis computations for such systems by introducing the notion of semi-biregularity. Collaboration with Sorina Ionica.
 
 	\section{Comment}
-		Je suis actuellement ingénieur d'étude en attente de confirmation du financement de thèse pour être en première année de thèse.
+		I am currently an ingénieur d'étude awaiting for PhD funding unlocking and would then be a first year PhD.
 
 \end{document}
